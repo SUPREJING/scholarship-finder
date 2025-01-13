@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/LOGO1.png" alt="Logo">
+            <span>Scholarship Finder</span>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="#home" class="active"><img src="images/home.png" alt="Home">主页</a>
+            <a href="#search"><img src="images/search.png" alt="Search">搜索</a>
+            <a href="#favorites-section"><img src="images/favorites.png" alt="Favorites">收藏</a>
+            <a href="#about">关于我们</a>
+            <a href="#faq">常见问题</a>
+            <button class="login-btn">登录/注册</button>
+        </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="section">
+        <h1>寻找你的理想奖学金</h1>
+        <p class="subtitle">探索全球数千个奖学金机会，开启你的学术之旅</p>
+        <div class="search-container">
+            <input type="text" placeholder="输入关键词搜索奖学金...">
+            <button class="search-btn">搜索</button>
+        </div>
+        <div class="filters">
+            <select class="filter-select" aria-label="选择国家">
+                <option value="">选择国家</option>
+                <option value="china">中国</option>
+                <option value="usa">美国</option>
+                <option value="uk">英国</option>
+                <option value="australia">澳大利亚</option>
+                <option value="canada">加拿大</option>
+                <option value="malaysia">马来西亚</option>
+                <option value="singapore">新加坡</option>
+                <option value="thailand">泰国</option>
+                <option value="indonesia">印度尼西亚</option>
+                <option value="vietnam">越南</option>
+                <option value="philippines">菲律宾</option>
+                <option value="japan">日本</option>
+                <option value="south-korea">韩国</option>
+                <option value="india">印度</option>
+                <option value="germany">德国</option>
+                <option value="france">法国</option>
+            </select>
+            <select class="filter-select" aria-label="学位类型">
+                <option value="">学位类型</option>
+                <option value="undergraduate">本科</option>
+                <option value="postgraduate">研究生</option>
+            </select>
+            <select class="filter-select" aria-label="资助类型">
+                <option value="">资助类型</option>
+                <option value="full">全额资助</option>
+                <option value="partial">部分资助</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- 搜索部分 -->
+    <section id="search" class="section">
+        <div class="scholarships-container">
+            <!-- 奖学金卡片将通过JavaScript动态添加 -->
+        </div>
+        <div class="search-results">
+            <!-- 搜索结果将在这里动态显示 -->
+        </div>
+
+        <!-- 收藏页面 -->
+        <div id="favorites-section" class="favorites-section">
+            <h2>我的收藏</h2>
+            <div class="favorites-container">
+                <!-- 空状态提示 -->
+                <div class="empty-state" id="empty-favorites">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <p>暂无收藏的奖学金</p>
+                    <p>快去发现心仪的奖学金吧！</p>
+                </div>
+                
+                <!-- 收藏列表容器 -->
+                <div class="favorites-list" id="favorites-list">
+                    <!-- 收藏的奖学金卡片将在这里动态显示 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们部分 -->
+    <section id="about" class="section about-section">
+        <h2>关于我们</h2>
+        <div class="about-content">
+            <p>Scholarship Finder 是一个专门帮助学生寻找合适奖学金的平台。我们的目标是让每个学生都能更轻松地找到适合自己的奖学金机会。</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>搜索奖学金</h3>
+                    <p>通过关键词快速查找相关奖学金</p>
+                </div>
+                <div class="feature">
+                    <h3>筛选选项</h3>
+                    <p>根据国家、资助类型和学位类型进行筛选</p>
+                </div>
+                <div class="feature">
+                    <h3>收藏功能</h3>
+                    <p>保存感兴趣的奖学金，方便后续查看</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题部分 -->
+    <section id="faq" class="section faq-section">
+        <h2>常见问题</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>如何开始查找奖学金？</h3>
+                <p>在主页搜索框输入关键词，或使用筛选器选择你感兴趣的国家、学位类型和资助类型。</p>
+            </div>
+            <div class="faq-item">
+                <h3>我需要注册才能使用平台吗？</h3>
+                <p>基础搜索功能无需注册，但如果想要保存收藏奖学金，则需要创建账户。</p>
+            </div>
+            <div class="faq-item">
+                <h3>奖学金申请需要哪些材料？</h3>
+                <p>通常需要准备个人简历、成绩单、个人陈述和推荐信等材料。具体要求请查看各奖学金详情。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 登录/注册模态框 -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">登录</button>
+                    <button class="auth-tab" data-tab="register">注册</button>
+                </div>
+                <div class="auth-form login-form">
+                    <input type="text" placeholder="用户名" required>
+                    <input type="password" placeholder="密码" required>
+                    <button class="auth-submit">登录</button>
+                    <button class="forgot-password-btn">忘记密码？</button>
+                </div>
+                <div id="resetPasswordModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>重置密码</h3>
+                        <input type="email" placeholder="输入你的邮箱" required>
+                        <button class="auth-submit">发送重置邮件</button>
+                    </div>
+                </div>
+                <div class="auth-form register-form hidden">
+                    <input type="text" placeholder="用户名" required>
+                    <input type="email" placeholder="邮箱" required>
+                    <input type="password" placeholder="密码" required>
+                    <input type="password" placeholder="确认密码" required>
+                    <button class="auth-submit">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载动画 -->
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- 底部信息 -->
+    <footer>
+        <p>联系我们: hejings0828@gmail.com</p>
+        <p> 2024 Scholarship Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
