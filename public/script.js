@@ -1,18 +1,18 @@
 // 在文件开头添加音效管理器
 const AudioManager = {
     sounds: {
-        click: new Audio('audio/click.mp3'),
-        success: new Audio('audio/success.mp3'),
-        error: new Audio('audio/error.mp3'),
-        background: new Audio('audio/background.mp3')
+        click: new Audio('/scholarship-finder/audio/click.mp3'),
+        success: new Audio('/scholarship-finder/audio/success.mp3'),
+        error: new Audio('/scholarship-finder/audio/error.mp3'),
+        background: new Audio('/scholarship-finder/audio/background.mp3')
     },
 
     loadSounds() {
         const audioFiles = {
-            click: 'audio/click.mp3',
-            success: 'audio/success.mp3',
-            error: 'audio/error.mp3',
-            background: 'audio/background.mp3'
+            click: '/scholarship-finder/audio/click.mp3',
+            success: '/scholarship-finder/audio/success.mp3',
+            error: '/scholarship-finder/audio/error.mp3',
+            background: '/scholarship-finder/audio/background.mp3'
         };
 
         for (const [name, path] of Object.entries(audioFiles)) {
@@ -63,10 +63,10 @@ const AudioManager = {
         const soundIcon = document.querySelector('.sound-icon');
         const musicIcon = document.querySelector('.music-icon');
         if (soundIcon) {
-            soundIcon.src = this.soundEnabled ? 'images/sound-on.png' : 'images/sound-off.png';
+            soundIcon.src = this.soundEnabled ? '/scholarship-finder/images/sound-on.png' : '/scholarship-finder/images/sound-off.png';
         }
         if (musicIcon) {
-            musicIcon.src = this.musicEnabled ? 'images/music-on.png' : 'images/music-off.png';
+            musicIcon.src = this.musicEnabled ? '/scholarship-finder/images/music-on.png' : '/scholarship-finder/images/music-off.png';
         }
     },
 

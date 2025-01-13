@@ -142,7 +142,7 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
-    ), url('images/students-bg.jpg');
+    ), url('/scholarship-finder/images/students-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -641,7 +641,7 @@ footer {
         to bottom,
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
-    ), url('images/library-bg.jpg');
+    ), url('/scholarship-finder/images/library-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -654,7 +654,7 @@ footer {
         to bottom,
         rgba(26, 115, 232, 0.05),
         rgba(255, 255, 255, 0.2)
-    ), url('images/campus-bg.jpg');
+    ), url('/scholarship-finder/images/campus-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -667,7 +667,7 @@ footer {
         to bottom,
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
-    ), url('images/study-bg.jpg');
+    ), url('/scholarship-finder/images/study-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
